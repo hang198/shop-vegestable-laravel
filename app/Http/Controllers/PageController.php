@@ -34,7 +34,7 @@ class PageController extends Controller
     {
         $product = Product::where('id', $request->id)->first();
         $product_related = Product::where('productType_id', $product->productType_id)->paginate(4);
-        return view('page.ProductDetail', compact('product', 'product_related','cart'));
+        return view('page.ProductDetail', compact('product', 'product_related'));
     }
     public function addCart(Request $request, $id)
     {
