@@ -13,7 +13,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::group(['prefix' => '/'],function (){
     Route::middleware('locale')->get('/', 'PageController@index')->name('index');
     Route::get('/product_type/{type}', 'PageController@productType')->name('product_type');
     Route::get('/product_detail/{id}', 'PageController@productDetail')->name('product_detail');
@@ -32,7 +31,6 @@ Route::group(['prefix' => '/'],function (){
     Route::get('/logout','LogoutController@showLogout')->name('showLogout');
     Route::post('/logout','LogoutController@logout')->name('logout');
 
-});
 Route::group(['prefix'=>'admin'], function (){
     Route::get('/', 'ProductController@index')->name('products.index');
     Route::get('/create','ProductController@create')->name('products.create');

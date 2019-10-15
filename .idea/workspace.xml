@@ -4,6 +4,8 @@
     <list default="true" id="be65e9a6-d675-4f1a-9cea-83554fc04f9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -219,7 +221,7 @@
       <workItem from="1570967788745" duration="134000" />
       <workItem from="1571013011015" duration="4876000" />
       <workItem from="1571035146798" duration="15283000" />
-      <workItem from="1571124462233" duration="4346000" />
+      <workItem from="1571124462233" duration="8661000" />
     </task>
     <servers />
   </component>
