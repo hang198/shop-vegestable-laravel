@@ -7,16 +7,6 @@
     <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="{{ route('index') }}" class="nav-link">@lang('lang.home')</a></li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">@lang('lang.shop')</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown04">
-                    <a class="dropdown-item" href="{{ route('product_type',1) }}">@lang('lang.shop')</a>
-                    <a class="dropdown-item" href="{{ route('wishlist') }}">@lang('lang.wishlist')</a>
-                    <a class="dropdown-item" href="{{ route('product_detail',1) }}">@lang('lang.single_product')</a>
-                    <a class="dropdown-item" href="{{ route('addCart',1) }}">@lang('lang.cart')</a>
-                    <a class="dropdown-item" href="{{ route('getCheckOut',1) }}">@lang('lang.checkout')</a>
-                </div>
-            </li>
             <li class="nav-item"><a href="{{ route('about') }}" class="nav-link">@lang('lang.about')</a></li>
             <li class="nav-item"><a href="{{ route('blog') }}" class="nav-link">@lang('lang.blog')</a></li>
             <li class="nav-item"><a href="{{ route('contact') }}" class="nav-link">@lang('lang.contact')</a></li>

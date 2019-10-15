@@ -36,10 +36,6 @@ class PageController extends Controller
         $product_related = Product::where('productType_id', $product->productType_id)->paginate(4);
         return view('page.ProductDetail', compact('product', 'product_related','cart'));
     }
-    public function wishlist() {
-        $product = Product::all();
-        return view('page.wishlist',compact('product'));
-    }
     public function addCart(Request $request, $id)
     {
         $product = Product::findOrFail($id);
