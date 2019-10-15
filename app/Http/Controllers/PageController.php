@@ -59,7 +59,7 @@ class PageController extends Controller
     }
     public function showCart() {
         $cart = Session('cart');
-        return view('page.showCart',compact('product','cart'));
+        return view('page.showCart',compact('cart'));
     }
     public function getCheckOut() {
         if (!$this->userCan('view-page-guest')) {
