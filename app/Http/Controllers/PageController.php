@@ -7,10 +7,12 @@ use App\BillDetail;
 use App\Cart;
 use App\Customer;
 use App\Http\Requests\CheckOutRequest;
+use App\Mail\CheckoutSuccess;
 use App\Product;
 use App\ProductType;
 use App\Slide;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
 class PageController extends Controller
@@ -98,6 +100,8 @@ class PageController extends Controller
                 $bill_detail->unit_price = ($value['price'] / $value['qty']);
                 $bill_detail->save();
             }
+            Mail::to($customer)->send(new CheckoutSuccess($customer,$bill));
+
             Session::forget('cart');
         }
 
@@ -111,9 +115,5 @@ class PageController extends Controller
     }
     public function contact() {
         return view('page.contact');
-    }
-    public function getSearch(Request $request) {
-        $product = Product::where('name','like','%'.$request->key.'%')->orWhere('unit_price',$request->key)->get();
-        return view('page.search',compact('product'));
     }
 }

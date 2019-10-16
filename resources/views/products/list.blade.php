@@ -5,11 +5,6 @@
             <div class="alert alert-success">{{Session::get('success')}}</div>
         @endif
         <a href="{{ route('products.create') }}" class="btn btn-primary">Thêm</a>
-        <form role="search" method="get" class="form-inline my-2 my-lg-0" id="searchform"
-              action="{{ route('getSearch') }}">
-            <input class="form-control mr-sm-2" name="key" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
         <table class="table">
             <thead>
             <tr>
