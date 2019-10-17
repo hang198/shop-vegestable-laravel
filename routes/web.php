@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
     Route::middleware('locale')->get('/', 'PageController@index')->name('index');
     Route::get('/product_type/{type}', 'PageController@productType')->name('product_type');
     Route::get('/product_detail/{id}', 'PageController@productDetail')->name('product_detail');
-    Route::get('/wishlist', 'PageController@wishlist')->name('wishlist');
     Route::get('/{id}/add-to-cart/', 'PageController@addCart')->name('addCart');
     Route::get('/del-cart/{id}', 'PageController@delCart')->name('delCart');
     Route::get('/cart', 'PageController@showCart')->name('showCart');

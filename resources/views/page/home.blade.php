@@ -1,20 +1,54 @@
 @extends('master')
 @section('content')
+{{--<section id="home-section" class="hero">--}}
+{{--    <div class="home-slider owl-carousel">--}}
+{{--        @foreach($slide as $sl)--}}
+{{--        <div class="slider-item">--}}
+{{--            <div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover"--}}
+{{--                 data-bgposition="center center" data-bgrepeat="no-repeat"--}}
+{{--                 data-lazydone="undefined"--}}
+{{--                 src="images/slide/{{$sl->image}}"--}}
+{{--                 data-src=images/slide/{{$sl->image}}"--}}
+{{--                 style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url('images/slide/{{$sl->image}}'); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity:1; visibility: inherit;">--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--            @endforeach--}}
+{{--    </div>--}}
+{{--</section>--}}
 <section id="home-section" class="hero">
     <div class="home-slider owl-carousel">
-        @foreach($slide as $sl)
-        <div class="slider-item">
-            <div class="tp-bgimg defaultimg" data-lazyload="undefined" data-bgfit="cover"
-                 data-bgposition="center center" data-bgrepeat="no-repeat"
-                 data-lazydone="undefined"
-                 src="images/slide/{{$sl->image}}"
-                 data-src=images/slide/{{$sl->image}}"
-                 style="background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url('images/slide/{{$sl->image}}'); background-size: cover; background-position: center center; width: 100%; height: 75%; opacity:1; visibility: inherit;">
+        <div class="slider-item" style="background-image: url('images/slide/bg_1.jpg');">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                    <div class="col-md-12 ftco-animate text-center">
+                        <h1 class="mb-2">We serve Fresh Vegestables &amp; Fruits</h1>
+                        <h2 class="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>
+                        <p><a href="{{ route('product_type',1) }}" class="btn btn-primary">View Details</a></p>
+                    </div>
+
+                </div>
             </div>
         </div>
-            @endforeach
+
+        <div class="slider-item" style="background-image: url('images/slide/bg_2.jpg');">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row slider-text justify-content-center align-items-center" data-scrollax-parent="true">
+
+                    <div class="col-sm-12 ftco-animate text-center">
+                        <h1 class="mb-2">100% Fresh &amp; Organic Foods</h1>
+                        <h2 class="subheading mb-4">We deliver organic vegetables &amp; fruits</h2>
+                        <p><a href="{{ route('product_type',2) }}" class="btn btn-primary">View Details</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 </section>
+
 
 <section class="ftco-section">
     <div class="container">
