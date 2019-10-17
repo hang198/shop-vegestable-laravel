@@ -14,7 +14,7 @@ class AddConstraintFromProductTypeTableToProductTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-//            $table->foreign('productType_id')->references('id')->on('productTypes');
+            $table->foreign('productType_id')->references('id')->on('productTypes');
         });
     }
 

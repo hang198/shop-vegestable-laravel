@@ -14,8 +14,8 @@ class AddConstraintFromBillDetailTableToBillTable extends Migration
     public function up()
     {
         Schema::table('bill_details', function (Blueprint $table) {
-//                        $table->foreign('bill_id')->references('id')->on('bills');
-//                        $table->foreign('product_id')->references('id')->on('products');
+                        $table->foreign('bill_id')->references('id')->on('bills');
+                        $table->foreign('product_id')->references('id')->on('products');
 
         });
     }
