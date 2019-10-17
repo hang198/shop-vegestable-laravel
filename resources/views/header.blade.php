@@ -19,14 +19,16 @@
             </li>
             <li class="nav-item"><a href="{{ route('showLogin') }}" class="nav-link">Login</a></li>
             <li class="nav-item"><a href="{{ route('showLogout') }}" class="nav-link">Logout</a></li>
+{{--            <li class="nav-item">--}}
+{{--        <form method="post" action="{{ route('changeLanguage') }}" class="navbar">--}}
+{{--            @csrf--}}
+{{--            <select name="lang" class="btn btn-outline-white" onchange="this.form.submit()">--}}
+{{--                <option value="">Language</option>--}}
+{{--                <option value="en">EN</option>--}}
+{{--                <option value="vi">VI</option>--}}
+{{--            </select>--}}
+{{--        </form>--}}
+{{--            </li>--}}
         </ul>
-        <form method="post" action="{{ route('changeLanguage') }}">
-            @csrf
-            <select name="lang" class="btn btn-outline-white" onchange="this.form.submit()">
-                <option value="">Language</option>
-                <option value="en">EN</option>
-                <option value="vi">VI</option>
-            </select>
-        </form>
     </div>
 </div>
