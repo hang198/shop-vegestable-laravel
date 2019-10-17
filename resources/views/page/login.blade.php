@@ -13,7 +13,8 @@
             <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-        <a  class="btn btn-black" href="/redirect/facebook">Login with Facebook</a>
+        <a  class="btn btn-primary" href="/redirect/facebook">Login with Facebook</a>
+        <a  class="btn btn-primary" href="/redirect/google">Login with Google</a>
     </form>
 
 
