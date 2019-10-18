@@ -31,6 +31,7 @@ class ProductController extends Controller
     }
     public function store(ProductRequest $request) {
         $product = new Product();
+        $product->id = $this->getProductId();
         $product->name = $request->name;
         $product->productType_id = $request->productType_id;
         $product->image = $request->image;
@@ -67,5 +68,16 @@ class ProductController extends Controller
         return redirect()->route('products.index');
     }
 
+    public function getProductId()
+    {
+        $products = Product::all();
+        foreach ($products as $product) {
+            $productId = mt_rand(1, 10000);
+            if ($productId !== $product->id) {
+                return $productId;
+            }
+        }
+        return 'request time out';
+    }
 
 }
