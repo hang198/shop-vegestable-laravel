@@ -23,7 +23,7 @@ class PageController extends Controller
 //    }
     public function index() {
         $slide = Slide::all();
-        $product = Product::all();
+        $product = Product::paginate(8);
         $product_type = ProductType::all();
         return view('page.home',compact('slide','product','product_type'));
     }

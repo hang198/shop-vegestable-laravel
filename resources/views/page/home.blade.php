@@ -173,6 +173,7 @@
             </div>
                 @endforeach
         </div>
+        <div class="row">{{$product->links()}}</div>
 
     </div>
 </section>
