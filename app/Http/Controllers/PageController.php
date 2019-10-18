@@ -124,10 +124,6 @@ class PageController extends Controller
         {
             return redirect()->back();
         }
-        if (count($products) == 0)
-        {
-            return "Khong co san pham";
-        }
         return view('page.getSearch',compact('products'));
     }
 }

@@ -12,6 +12,9 @@
         </div>
         <div class="container">
             <div class="row">
+                @if (count($products) == 0)
+                No products
+                @else
                 @foreach($products as $p)
                     <div class="col-md-6 col-lg-3 ftco-animate">
                         <div class="product">
@@ -50,6 +53,7 @@
                         </div>
                     </div>
                 @endforeach
+                @endif
             </div>
         <div class="row">{{$products->links()}}</div>
         </div>
