@@ -119,7 +119,7 @@ class PageController extends Controller
     public function getSearch(Request $request)
     {
         $search = $request->get('search');
-        $products = Product::where('name::text','like', '%' . $search . '%' )->paginate(3);
+        $products = Product::where('name','like', '%' . $search . '%' )->paginate(3);
         if ($search == null)
         {
             return redirect()->back();
