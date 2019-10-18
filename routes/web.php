@@ -37,7 +37,7 @@ Route::group(['prefix'=>'admin'], function (){
     Route::get('/{id}/edit','ProductController@edit')->name('products.edit');
     Route::post('/{id}/update','ProductController@update')->name('products.update');
     Route::get('/{id}/delete','ProductController@destroy')->name('products.destroy');
-    Route::get('/search','PageController@getSearch')->name('getSearch');
+    Route::get('/search','PageController@getSearch')->name('products.getSearch');
 });
 Route::get('/redirect/{social}', 'SocialAuthController@redirect');
 Route::get('/callback/{social}', 'SocialAuthController@callback');

@@ -116,4 +116,18 @@ class PageController extends Controller
     public function contact() {
         return view('page.contact');
     }
+    public function getSearch(Request $request)
+    {
+        $search = $request->get('search');
+        $products = Product::where('name','like', '%' . $search . '%' )->paginate(3);
+        if ($search == null)
+        {
+            return redirect()->back();
+        }
+        if (count($products) == 0)
+        {
+            return "Khong co san pham";
+        }
+        return view('page.getSearch',compact('products'));
+    }
 }

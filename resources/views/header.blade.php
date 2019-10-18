@@ -1,5 +1,11 @@
 <div class="container">
     <a class="navbar-brand" href="{{ route('index') }}">Vegefoods</a>
+    <div class="input-group">
+        <form action="{{route('products.getSearch')}}" method="get">
+            <input type="search" class="form-control" placeholder="Search" aria-label="Search" name="search">
+                <button class="btn btn-secondary" type="submit" hidden></button>
+        </form>
+    </div>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="oi oi-menu"></span> Menu
     </button>
