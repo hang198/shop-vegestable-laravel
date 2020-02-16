@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be65e9a6-d675-4f1a-9cea-83554fc04f9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shop-vegestable.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shop-vegestable.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/page/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/home.blade.php" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -125,10 +121,15 @@
   </component>
   <component name="ProjectId" id="1RdtkLS7IPM9JzgSEv5ofIP5MZC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop-food" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -155,23 +156,23 @@
       <recent name="$PROJECT_DIR$/public/js" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -227,7 +228,26 @@
       <workItem from="1571229118344" duration="645000" />
       <workItem from="1571293857851" duration="10496000" />
       <workItem from="1571316451718" duration="2795000" />
-      <workItem from="1571380565331" duration="6765000" />
+      <workItem from="1571380565331" duration="7681000" />
+      <workItem from="1571408931571" duration="2151000" />
+      <workItem from="1571474331349" duration="30000" />
+      <workItem from="1571474382410" duration="20000" />
+      <workItem from="1571638500333" duration="89000" />
+      <workItem from="1571644167609" duration="70000" />
+      <workItem from="1571910387205" duration="596000" />
+      <workItem from="1572244648768" duration="14000" />
+      <workItem from="1572253437931" duration="42000" />
+      <workItem from="1573475015242" duration="891000" />
+      <workItem from="1573487905952" duration="3297000" />
+      <workItem from="1575519647408" duration="633000" />
+      <workItem from="1577954917536" duration="813000" />
+      <workItem from="1577960012362" duration="6357000" />
+      <workItem from="1578308873358" duration="1329000" />
+      <workItem from="1578360322453" duration="163000" />
+      <workItem from="1578360503891" duration="34000" />
+      <workItem from="1578380020405" duration="674000" />
+      <workItem from="1580884253491" duration="708000" />
+      <workItem from="1581414279544" duration="456000" />
     </task>
     <servers />
   </component>
@@ -246,5 +266,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1580890657693">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="466" y="154" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1580890657693" />
   </component>
 </project>
